@@ -1,0 +1,86 @@
+@charset "windows-1251";
+h1{
+margin-bottom:20px;
+text-align:center;
+}
+h2{
+vertical-align:top;
+text-align:right;
+margin-bottom:0px;
+padding:0
+}
+.header{display:inline-block;
+        background-color:pink;
+		position:relative;
+		top:-32px;
+		right:-12px;
+		padding:9px;
+		border:2px solid black;
+		}
+#redHeader{
+background-color:red;
+color:white;
+}
+#blueHeader{
+background-color:blue;
+color:white;
+}
+#greenHeader{
+background-color:green;
+}
+*{
+  box-sizing:border-box;
+
+  }
+ @media(min-width:992px) {
+    div:not([class="header"]){
+	height:280px;
+	overflow-y:auto;
+    float:left;
+    background-color:cyan;
+    width:29.3333%;
+	margin:2%;
+	vertical-align:top;
+	border:2px solid black;
+	text-align:justify;
+	padding:10px;
+	overflow-x:hidden;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px) {
+    div:not([class="header"]){
+	height:280px;
+	overflow-y:auto;
+    float:left;
+    background-color:cyan;
+    width:46%;
+	margin:2%;
+	vertical-align:top;
+	border:2px solid black;
+	ttext-align:justify;
+	padding:10px;
+	overflow-x:hidden;
+    }
+	div:nth-child(3n+4){
+	width:96%;
+	border:2px solid black;
+	margin:2%;
+	padding:10px;
+	}
+ }
+ @media(max-width:767px) {
+    div:not([class="header"]){
+	height:280px;
+	overflow-y:auto;
+	overflow-x:hidden;
+    float:left;
+    background-color:cyan;
+	padding:10px;
+    width:96%;
+	margin:2%;
+	vertical-align:top;
+	border:2px solid black;
+	text-align:justify;
+    }
+	
+ }
